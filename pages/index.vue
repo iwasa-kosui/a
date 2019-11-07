@@ -164,7 +164,7 @@ export default Vue.extend({
 }
 
 h1 {
-  font-size: 18px;
+  font-size: 24px;
 }
 
 textarea {
