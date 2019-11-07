@@ -177,11 +177,10 @@ textarea {
 button {
   width: 80vw;
   height: 15vh;
-  background: #2e6da4;
-  filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.6));
   border: none;
-  color: #333;
-  font-size: 18px;
-  font-weight: bold;
+  filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.6));
+  background: #4caf50;
+  color: white;
+  font-weight: 700;
 }
 </style>
