@@ -46,7 +46,7 @@ const genCond = (raw: string): string => {
 
   switch (r) {
     case 0:
-      name = `${raw} != true`
+      name = `${raw} == true`
       break
     case 1:
       name = `${raw} != false`
@@ -55,10 +55,10 @@ const genCond = (raw: string): string => {
       name = `!(${raw} != true)`
       break
     case 3:
-      name = `!(${raw} != false)`
+      name = `!(${raw} == false)`
       break
     case 4:
-      name = `!!(${raw} != true)`
+      name = `!!(${raw} == true)`
       break
     case 5:
       name = `!!(${raw} != false)`
@@ -163,14 +163,25 @@ export default Vue.extend({
   margin: auto;
 }
 
+h1 {
+  font-size: 18px;
+}
+
 textarea {
   height: 50vh;
   width: 80vw;
   font-size: 18px;
+  filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.6));
 }
 
 button {
   width: 80vw;
-  height: 100px;
+  height: 15vh;
+  background: #2e6da4;
+  filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.6));
+  border: none;
+  color: #333;
+  font-size: 18px;
+  font-weight: bold;
 }
 </style>

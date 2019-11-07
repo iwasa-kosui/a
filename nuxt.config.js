@@ -31,7 +31,7 @@ export default {
   /*
    ** Nuxt.js dev-modules
    */
-  buildModules: ['@nuxt/typescript-build'],
+  buildModules: ['@nuxt/typescript-build', '@nuxtjs/google-analytics'],
   /*
    ** Nuxt.js modules
    */
@@ -40,6 +40,9 @@ export default {
     '@nuxtjs/axios',
     '@nuxtjs/pwa'
   ],
+  googleAnalytics: {
+    id: 'UA-151637549-2'
+  },
   /*
    ** Axios module configuration
    ** See https://axios.nuxtjs.org/options
